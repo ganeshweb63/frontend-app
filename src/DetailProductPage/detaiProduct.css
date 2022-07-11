@@ -1,0 +1,105 @@
+.detailProduct{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+/* left side detail product */
+
+.detailProduct .left{
+    border: 1px solid red;
+    width:35vw;
+}
+
+.left .left-box{
+    border: 0px solid black;
+    text-align: center;
+    position: relative;
+}
+
+.left .left-box .image{
+    border: 0px solid black;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 5px;
+
+}
+
+.left .left-box .name{
+    border: 0px solid black;
+    color: blue;
+    margin-bottom: 15px;
+}
+
+.left .left-box .price{
+    border: 0px solid black;
+    color: green;
+    margin-bottom: 5px;
+    
+}
+
+.left .left-box .add-to-cart{
+    border: 0px solid black;
+    background-color: orange;
+    padding: 5px 15px;
+   float: left;
+   border-radius: 5px;
+   position: relative;
+   left: 15px;
+   bottom: 10px;
+}
+
+.left .left-box .buy{
+    border: 0px solid black;
+    background-color: green;
+    padding: 5px 15px;
+    float: right;
+    position: relative;
+    right: 15px;
+    bottom: 10px;
+    border-radius: 5px;
+    color: white;
+} 
+
+
+/* right side detail product */
+
+.detailProduct .right{
+    border: 1px solid red;
+    width:60vw;
+}
+
+
+
+.right .right-box{
+    border: 0px solid black;
+
+}
+.right .right-box .brand{
+    border: 0px solid black;
+    text-align: center;
+    background-color: green;
+    margin: 5px 0px 5px 0px;
+
+}
+
+.right .right-box .highlights{
+    list-style-type: none;
+
+}
+
+.right .right-box .highlights li{
+    line-height: 18px;
+
+}
+.right .right-box .description-list{
+    list-style-type: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+
+

@@ -1,0 +1,195 @@
+body{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.nav{
+    background-color: green;
+    width: 100%;
+}
+
+.nav .menu{
+    list-style-type: none;
+    padding: 5px;
+}
+
+
+.menu .item .a{
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.menu .logo .a{
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.button.secondary{
+    border-bottom: 1px solid #444;
+}
+
+.fa-cart-shopping{
+    color: orange;
+    font-size: 18px;
+}
+
+.cart-length{
+    font-size: 20px;
+    position: relative;
+    bottom: 8px;
+    right: 3px;
+    color: rgb(12, 11, 11);
+}
+
+/* mobile menu */
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    text-align: start;
+    margin-left: 0.5rem;
+}
+
+.toggle{
+    cursor:pointer;
+    order: 1;
+    position: relative;
+    top:-5px;
+    /* transition: all 0.5s ease; */
+}
+
+.item.button{
+    order: 2;
+}
+
+.item{
+    width:100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.item.active{
+    display: block;
+}
+
+
+
+
+.bars{
+    background-color: rgb(253, 246, 246);
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    width:18px;
+}
+
+.bars::before,.bars::after{
+    background-color: rgb(246, 241, 241);
+    display: inline-block;
+    content: "";
+    height: 3px;
+    position: absolute;
+    width: 18px;
+    right:0px;
+}
+
+.bars::before{
+    top:5px;
+}
+
+.bars::after{
+    top:-5px;
+}
+
+/* tablet menu */
+
+@media all and (min-width:468px){
+    .menu{
+        justify-content: center;   
+    }
+    .logo{
+        flex: 1;
+        text-align: start;
+        margin-left: 2rem;
+    }
+    .item.button{
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toggle{
+        order: 2;
+    }
+    .button.secondary{
+        border-bottom: 0;
+    }
+    .item.button .a{
+        background-color: rgb(20, 35, 40);
+        padding: 3px 10px;
+        border: 1px solid rgb(248, 242, 242);
+        border-radius: 50em;
+
+    }
+    .button.secondary .a{
+        background-color:transparent ;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .item.button .a:hover{
+        transition: all 0.5s;
+    }
+    .item.button:not(.secondary) .a:hover{
+        background-color: #edf5f5;
+        color: black;
+        border-color: #444;
+    }
+
+    .button.secondary .a:hover{
+        color:#030a0b ;
+    }
+
+}
+
+/* desktop styles */
+
+@media all and (min-width:768px) {
+    .item{
+        display: block;
+        width: auto;
+    }
+    
+    .logo{
+        order: 0;
+        text-align: start;
+        margin-left: 2rem;
+    }
+    .item{
+        order: 1;
+    }
+    .item.button{
+        order: 3;
+    }
+    .toggle{
+        display: none;
+    }
+    .menu li{
+        padding: 5px 15px;
+    }
+    .item.button{
+        padding-right: 0;
+    }
+}
+ 
+
+
+
+
