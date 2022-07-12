@@ -6,6 +6,8 @@ import DetailProductPage from "../DetailProductPage/DetailProductPage";
 import './navbar.css';
 import Register from "./Register";
 import { Context } from "../components/createContext";
+import Login from "./Login";
+import Contact from "./Contact";
 
 const Navbar=()=>{
     const [active,setActive]=useState(false);
@@ -43,7 +45,8 @@ const Navbar=()=>{
 
 
                 <Routes>
-                    {/* <Route path="/login" exact element={<Login/>}></Route> */}
+                    <Route path="/contact" exact element={<Contact/>}></Route>
+                    <Route path="/login" exact element={<Login/>}></Route>
                     <Route path="/register" exact element={<Register/>}></Route>
                     <Route path='/' exact element={<ProductDashboard/>}></Route>
                     <Route path='/home/:_id' exact element={<DetailProductPage/>}></Route>

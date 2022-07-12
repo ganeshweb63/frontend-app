@@ -1,0 +1,52 @@
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+}
+
+.login-body .section {
+    background-color: rgba(250, 248, 250, 0.949);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width:35%;
+    padding: 50px 40px;
+    margin-top: 70px;
+
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form .login-btn{
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    margin-bottom: -35px;
+}
+
+label, 
+.login-form .login-btn {
+    margin-top: 1rem;
+    margin-top: 38px;
+    
+}
+
+.login-form .login-btn {
+    padding: 0.5rem;
+    cursor: pointer;
+    color: black;
+    background-color: rgb(28, 203, 203);
+}

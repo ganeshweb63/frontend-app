@@ -4,7 +4,7 @@
 
 
 .register-body{
-    display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,7 @@
   padding: 1rem 0.5rem;
 }
 
-.section {
+.register-body .section {
     width: 100%;
     max-width: 400px;
     min-height: 400px;
@@ -25,7 +25,7 @@
     background-color: rgba(250, 248, 250, 0.949);
 }
 
-form {
+.register-form {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -37,23 +37,27 @@ a, a:visited {
     color: rgb(13, 33, 215);
 }
 
-input[type="text"],input[type="email"],
-input[type="password"],
-button,
-textarea {
+.register-form input[type="text"],.register-form input[type="email"],
+.register-form input[type="password"],
+.register-form button,
+.register-form textarea {
   font-family: 'Nunito', sans-serif;
   font-size: 22px;
   padding: 0.25rem;
   border-radius: 0.5rem;
 }
 
-label,
-button {
+label, 
+.register-form button {
   margin-top: 1rem;
+
 }
 
-button {
+.register-form button {
   padding: 0.5rem;
+  cursor: pointer;
+  color: black;
+  background-color: rgb(28, 203, 203);
 }
 
 .instructions {

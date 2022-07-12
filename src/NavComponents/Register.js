@@ -100,7 +100,7 @@ function Register(){
 
         <section className='section'>
             <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"}>{errMsg}</p>
-            <form onSubmit={handleSubmit}>
+            <form className='register-form' onSubmit={handleSubmit}>
                 <label htmlFor='username'>Username :
                 <i className={validUsername ? "valid fa-solid fa-circle-check" : "hide"}></i>
                 <i className={validUsername || !username ? "hide" : "invalid fa-solid fa-circle-xmark"}></i>

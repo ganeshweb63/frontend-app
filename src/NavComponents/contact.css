@@ -1,0 +1,155 @@
+.contact-body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.contact{
+    background-image: url('https://img.freepik.com/premium-photo/contact-us-business-icon-computer-keyboard-with-globe_117856-2468.jpg?size=626&ext=jpg&ga=GA1.2.817753523.1657639812');
+    background-size: cover;
+    opacity: 0.9;
+    width: 100vw;
+    height:100vh;
+
+}
+
+.contact-header{
+    margin: 10px 50px 30px 50px;
+}
+.contact-header h1{
+    padding: 10px;
+    font-size: 42px;
+    
+}
+.contact-header p{
+    text-align:justify;
+    text-indent: 5cm;
+
+}
+
+.contact-header p::first-letter{
+    font-size: 22px;
+    color: rgb(30, 233, 12);
+
+}
+
+/* Contact main info... */
+
+.contact-details{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+} 
+.contact-details .contact-info{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 5em;
+    margin-top: 50px;
+} 
+.contact-info .contact-address{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+
+} 
+
+.contact-info .contact-phone{
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+} 
+.contact-info .contact-email{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+} 
+
+/* Contact Icons styling... */
+.contact-location-icon{
+    border: 3px solid white;
+    padding: 20px;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    text-align: start;
+    margin-right: 2em;
+}
+.contact-phone-icon{
+    border: 3px solid white;
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    text-align: start;
+    margin-right: 4em;
+}
+.contact-email-icon{
+    border: 3px solid white;
+    padding: 20px;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    text-align: start;
+    margin-right: 1em;
+}
+
+
+
+/* Contact form Styling... */
+
+
+.contact-details .contact-form {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    
+}
+.contact-details .contact-form form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid whitesmoke;
+    background-color: white;
+    color: black;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.contact-form-form input[type="email"],
+.contact-form-form input[type="text"],
+.contact-form-form textarea,
+.contact-form-form .contact-send-btn{
+    font-size: 20px;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    margin-bottom: 10px;
+    font-family:    'Times New Roman', serif;
+}
+
+.contact-form-form .contact-send-btn{
+    cursor: pointer;
+    color: black;
+    background-color: rgb(28, 203, 203);
+}
